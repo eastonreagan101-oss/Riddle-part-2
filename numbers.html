@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Numbers Page</title>
+</head>
+<body>
+
+<h2>Numbers:</h2>
+<p>5184199416</p>
+<p>5186106753</p>
+<p>5182443177</p>
+
+<h3>Enter the text to continue:</h3>
+
+<input type="text" id="textInput">
+<button onclick="checkText()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function checkText() {
+  const input = document.getElementById("textInput").value;
+
+  if (input === "05/18/2010-7/30/2010") {
+    window.location.href = "final.html";
+  } else {
+    document.getElementById("result").innerText = "Incorrect";
+  }
+}
+</script>
+
+</body>
+</html>
