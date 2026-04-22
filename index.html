@@ -1,32 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Enter Code</title>
-</head>
+<script>
+  function checkCode() {
+    let input = document.getElementById("codeInput").value.trim();
 
-<body style="text-align:center; font-family:Arial;">
-
-  <h2>Enter the number:</h2>
-
-  <input type="text" id="codeInput" placeholder="Enter code">
-  <br><br>
-
-  <button onclick="checkCode()">Submit</button>
-
-  <p id="result" style="color:red;"></p>
-
-  <script>
-    function checkCode() {
-      let input = document.getElementById("codeInput").value.trim();
-
-      if (input === "429") {
-        window.location.href = "./numbers.html";  
-      } 
-      else {
-        document.getElementById("result").innerText = "Incorrect";
-      }
+    if (input === "429") {
+      window.location.href = "/Riddle-part-2/numbers.html";
+    } 
+    else {
+      document.getElementById("result").innerText = "Incorrect";
     }
-  </script>
-
-</body>
-</html>
+  }
+</script>
